@@ -10,4 +10,6 @@ function f(int x, int y) -> int:
         return 123
 
 method main(System.Console sys) -> void:
-    sys.out.println(1)
+    assert f(1,1) == 123
+    assert f(2,1) == 123
+    assert f(1,2) == 3

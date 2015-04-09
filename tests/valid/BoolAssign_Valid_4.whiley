@@ -15,9 +15,9 @@ function g(int x, int y) -> int:
         return 1
 
 method main(System.Console sys) -> void:
-    sys.out.println(f(1, 1))
-    sys.out.println(f(0, 0))
-    sys.out.println(f(4, 345))
-    sys.out.println(g(1, 1))
-    sys.out.println(g(0, 0))
-    sys.out.println(g(4, 345))
+    assert f(1, 1) == 1
+    assert f(0, 0) == 1
+    assert f(4, 345) == 349
+    assert g(1, 1) == 1
+    assert g(0, 0) == 1
+    assert g(4, 345) == 349

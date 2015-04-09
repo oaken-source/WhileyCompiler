@@ -9,8 +9,10 @@ function index(liststr l, int index) -> any
 
 method main(System.Console sys) -> void:
     [int] l = [1, 2, 3]
-    sys.out.println(index(l, 1))
-    sys.out.println(index(l, 2))
+    assert index(l, 0) == 1
+    assert index(l, 1) == 2
+    assert index(l, 2) == 3
     [int] s = "Hello World"
-    sys.out.println(index(s, 0))
-    sys.out.println(index(s, 2))
+    assert index(s, 0) == 'H'
+    assert index(s, 1) == 'e'    
+    assert index(s, 2) == 'l'
