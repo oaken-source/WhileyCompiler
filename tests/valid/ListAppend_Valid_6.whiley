@@ -8,6 +8,6 @@ function test([real] xs, [int] ys) -> bool:
 
 method main(System.Console sys) -> void:
     bool s = test([1.2, 2.3, 3.4], [1, 2, 3, 4, 5, 6, 7, 8])
-    assert s == true    
+    assume s == true    
     s = test([1.2, 2.3, 3.4], [])
-    assert s == false
+    assume s == false

@@ -9,4 +9,4 @@ method main(System.Console sys) -> void:
     [int] left = [1, 2, 3]
     [int] right = [5, 6, 7]
     int r = f(left, right)
-    assert r == 6
+    assume r == 6

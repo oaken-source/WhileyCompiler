@@ -8,7 +8,7 @@ function append([int] input) -> [int]:
 
 method main(System.Console sys) -> void:
     [int] xs = append("abcdefghijklmnopqrstuvwxyz")
-    assert xs == [
+    assume xs == [
         'z',
         'y',
         'x',

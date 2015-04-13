@@ -9,10 +9,10 @@ function index(liststr l, int index) -> any
 
 method main(System.Console sys) -> void:
     [int] l = [1, 2, 3]
-    assert index(l, 0) == 1
-    assert index(l, 1) == 2
-    assert index(l, 2) == 3
+    assume index(l, 0) == 1
+    assume index(l, 1) == 2
+    assume index(l, 2) == 3
     [int] s = "Hello World"
-    assert index(s, 0) == 'H'
-    assert index(s, 1) == 'e'    
-    assert index(s, 2) == 'l'
+    assume index(s, 0) == 'H'
+    assume index(s, 1) == 'e'    
+    assume index(s, 2) == 'l'

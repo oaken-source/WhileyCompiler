@@ -14,4 +14,4 @@ method main(System.Console sys) -> void:
         x = [[1], [2, 3], [5]]
     x[0] = 1
     //
-    assert f(x) == [1,2,3]
+    assume f(x) == [1,2,3]

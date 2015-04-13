@@ -11,5 +11,5 @@ function f(int i) -> [int]:
     return arr1 ++ arr2
 
 method main(System.Console sys) -> void:
-    assert f(2) == [1, 2, 64, 1, 2, 3]
-    assert f(3) == [1, 2, 64, 1, 2, 3]
+    assume f(2) == [1, 2, 64, 1, 2, 3]
+    assume f(3) == [1, 2, 64, 1, 2, 3]

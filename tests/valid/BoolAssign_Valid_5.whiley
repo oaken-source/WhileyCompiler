@@ -13,6 +13,6 @@ ensures r > 0:
         return 123
 
 method main(System.Console sys) -> void:
-    assert f(1,1) == 123
-    assert f(2,1) == 123
-    assert f(1,2) == 3
+    assume f(1,1) == 123
+    assume f(2,1) == 123
+    assume f(1,2) == 3

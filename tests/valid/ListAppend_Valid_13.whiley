@@ -10,5 +10,5 @@ function g(plistv6 left, plistv6 right) -> int:
 
 method main(System.Console sys) -> void:
     int r = g([1, 2, 3], [6, 7, 8])
-    assert r == 6
+    assume r == 6
 

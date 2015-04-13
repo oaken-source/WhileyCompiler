@@ -21,9 +21,9 @@ ensures r > 0:
         return 1
 
 method main(System.Console sys) -> void:
-    assert f(1, 1) == 1
-    assert f(0, 0) == 1
-    assert f(4, 345) == 349
-    assert g(1, 1) == 1
-    assert g(0, 0) == 1
-    assert g(4, 345) == 349
+    assume f(1, 1) == 1
+    assume f(0, 0) == 1
+    assume f(4, 345) == 349
+    assume g(1, 1) == 1
+    assume g(0, 0) == 1
+    assume g(4, 345) == 349

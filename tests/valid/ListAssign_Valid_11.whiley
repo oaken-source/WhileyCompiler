@@ -9,5 +9,5 @@ requires |a| > 0:
 
 method main(System.Console sys) -> void:
     [int] b = [1, 2, 3]
-    assert f(b) == [5,2,3]
+    assume f(b) == [5,2,3]
 

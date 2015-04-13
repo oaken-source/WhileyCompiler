@@ -30,4 +30,4 @@ requires |board.rows| > 0:
 
 method main(System.Console sys) -> void:
     Board r1 = {flag: false, rows: [WHITE_PAWN]}
-    assert f(r1) == {flag:false,rows:[{colour:false,kind:0}]}
+    assume f(r1) == {flag:false,rows:[{colour:false,kind:0}]}

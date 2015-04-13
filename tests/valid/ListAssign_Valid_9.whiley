@@ -10,7 +10,7 @@ method main(System.Console sys) -> void:
     [int] a1 = f()
     [int] a2 = f()
     a2[0] = 0
-    assert a1[0] == 1
-    assert a1[1] == 2
+    assume a1[0] == 1
+    assume a1[1] == 2
     assert a2[0] == 0
-    assert a2[1] == 2
+    assume a2[1] == 2

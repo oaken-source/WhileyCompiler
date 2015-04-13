@@ -16,5 +16,5 @@ method main(System.Console sys) -> void:
     [[int]] nls
     [[int]] ls = [[1, 2, 3, 4]]
     (ls, nls) = f(ls)
-    assert ls == [[1,2,3,4]]
-    assert nls == [[10,2,3,4]]    
+    assume ls == [[1,2,3,4]]
+    assume nls == [[10,2,3,4]]    
